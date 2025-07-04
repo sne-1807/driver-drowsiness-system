@@ -1,10 +1,10 @@
 #include <ESP8266WiFi.h>
 
-const char* ssid = "KOWALSKI1807";
-const char* password = "qwerty123";
+const char* ssid = "YOUR_WIFI_DETAILS";
+const char* password = "YOUR_WIFI_PASSWORD";
 
 const char* host = "api.thingspeak.com";
-String apiKey = "5RI5MMCRUQ5Y7CH4";
+String apiKey = "YOUR_WRITE_API";
 
 #define EYE_SENSOR_PIN 5
 #define BUZZER_PIN 4

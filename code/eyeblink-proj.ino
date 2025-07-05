@@ -1,27 +1,29 @@
 #include <ESP8266WiFi.h>
 
-const char* ssid = "YOUR_WIFI_DETAILS";
-const char* password = "YOUR_WIFI_PASSWORD";
+const char* ssid = "KOWALSKI1807";
+const char* password = "qwerty123";
 
 const char* host = "api.thingspeak.com";
-String apiKey = "YOUR_WRITE_API";
+String apiKey = "5RI5MMCRUQ5Y7CH4";
 
 #define EYE_SENSOR_PIN 5
 #define BUZZER_PIN 4
+#define LED_PIN 2
 
-int flag = 0;
-unsigned long t1 = 0, t2=0;
 
 void setup() 
 {
   pinMode(EYE_SENSOR_PIN, INPUT);
   pinMode(BUZZER_PIN, OUTPUT);
+  pinMode(LED_PIN, OUTPUT);
   Serial.begin(115200);
 
   WiFi.begin(ssid, password);
   while (WiFi.status() != WL_CONNECTED) 
   {
-    delay(500);
+    digitalWrite(LED_PIN, HIGH);
+    delay(100);
+    digitalWrite(LED_PIN, LOW);
     Serial.print(".");
   }
   Serial.println("\nWiFi connected");

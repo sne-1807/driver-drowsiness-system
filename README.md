@@ -1,4 +1,4 @@
-# Driver Drowsiness System 
+# Driver Drowsiness Detection System 
 
 ## Aim
 To develop a low-cost embedded system that detects driver drowsiness using eye-blink monitoring and provides immediate alerts to driver, while enabling remote tracking of activity through IoT for enhanced road and industrial safety.
